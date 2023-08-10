@@ -9,8 +9,8 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 
 
-# Criar um nome para pasta do projeto
-folder_pasta = "BackupAzureDevolps" #Inclua o o nome da pasta casa deseja
+# Criar um nome para pasta do projeto no C:
+folder_pasta = "BackupAzureDevolps" #Inclua o o nome da pasta que deseja
 
 # Caminho completo para a pasta do projeto
 output_folder = os.path.join("C:/", folder_pasta)
@@ -24,7 +24,7 @@ if not os.path.exists(output_folder):
 current_date = datetime.now().strftime("%Y-%m-%d")
 folder_name = f"{current_date}" #Inclua o o nome da pasta casa deseja
 
-# Caminho completo para a pasta do projeto
+# Caminho completo para a pasta dos arquivos de backup daquele dia
 output_folder = os.path.join("C:/BackupAzureDevolps", folder_name)
 
 # Verificar se a pasta já existe ou criar a nova pasta para salvar os backup
